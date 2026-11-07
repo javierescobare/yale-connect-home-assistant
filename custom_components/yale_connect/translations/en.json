@@ -1,0 +1,45 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Yale Connect",
+        "description": "Use the same account as the Yale Connect app.",
+        "data": {
+          "email": "Email",
+          "password": "Password",
+          "entry_code": "Entry code (lock PIN)",
+          "allow_unlock": "Allow unlocking from Home Assistant"
+        },
+        "data_description": {
+          "entry_code": "Sent to the Yale cloud when locking or unlocking.",
+          "allow_unlock": "When off, Home Assistant can only lock."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reauthenticate Yale Connect",
+        "description": "The password for {email} is no longer valid.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password",
+      "cannot_connect": "Cannot connect to Yale Connect"
+    },
+    "abort": {
+      "already_configured": "This account is already configured",
+      "reauth_successful": "Reauthentication successful"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "entry_code": "Entry code (lock PIN)",
+          "allow_unlock": "Allow unlocking from Home Assistant"
+        }
+      }
+    }
+  }
+}

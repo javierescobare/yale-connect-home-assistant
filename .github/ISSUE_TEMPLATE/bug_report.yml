@@ -1,0 +1,33 @@
+name: Bug report
+description: Report a reproducible problem using anonymized information.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Do not include passwords, PINs, tokens, email addresses, real identifiers,
+        or unredacted access history. For vulnerabilities, see SECURITY.md.
+  - type: input
+    id: version
+    attributes:
+      label: Integration and Home Assistant versions
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: Lock model, app used, and account country
+      placeholder: Yale YDM 60, Yale Connect, Peru
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps, observed behavior, and expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error or anonymized sample, if relevant
+      render: text

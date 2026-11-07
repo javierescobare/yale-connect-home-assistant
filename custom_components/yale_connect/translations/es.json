@@ -1,0 +1,43 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Yale Connect",
+        "description": "Usa la misma cuenta de la app Yale Connect.",
+        "data": {
+          "email": "Correo",
+          "password": "Contraseña",
+          "entry_code": "Código de entrada (PIN de la cerradura)",
+          "allow_unlock": "Permitir desbloquear desde Home Assistant"
+        },
+        "data_description": {
+          "entry_code": "Se envía a la nube de Yale al bloquear o desbloquear.",
+          "allow_unlock": "Si está apagado, Home Assistant solo puede bloquear."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reautenticar Yale Connect",
+        "description": "La contraseña de {email} ya no es válida.",
+        "data": { "password": "Contraseña" }
+      }
+    },
+    "error": {
+      "invalid_auth": "Correo o contraseña incorrectos",
+      "cannot_connect": "No se pudo conectar con Yale Connect"
+    },
+    "abort": {
+      "already_configured": "Esta cuenta ya está configurada",
+      "reauth_successful": "Reautenticación exitosa"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "entry_code": "Código de entrada (PIN de la cerradura)",
+          "allow_unlock": "Permitir desbloquear desde Home Assistant"
+        }
+      }
+    }
+  }
+}
